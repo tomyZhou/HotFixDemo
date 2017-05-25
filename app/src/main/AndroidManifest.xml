@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.deepshare.hotfixdemo">
+
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 外部存储读权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="热修复"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="23861275-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="37c2cae96a95606b7853d0c352e94311" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCWE3wb+E3DlaM2qOgB2ihYzDYmg5P4eJ5oapnbDPDzbPc3rcfFMAeXXvxOd2xBQa4dnX/+VNSj2LO5/Y41dUpg3ttCU13g2X1kf9rnT0ZQ0mzuVQhFK0Wbc+G3XlQ2zYWeUt3PVS5Y8LseQe5W0sx/gnBPLMtJYvifkpmMPAVtEtmabAdMdvk2e/aGkNbhtw+hzbrJb3ks2iYHBwHWErx4TP5PX86Jp4yFCluFo9Pk1LgbYfLnBUPQ1fdXDz5hEtj24LNc/uGp/IL/4fQn33df3RTPplgbAwaKJgbLpq5/x79SLoVbCe8K+zbtyzDQLaL7LiwHXqPkJQ67L/Eui+JDAgMBAAECggEBAIxy/cJbVcOFxfJAjqg1F29K5h6TIyb1EyKbKRPkf5cA0jgMbZnwAhq6rRtuDiTgJ+fVX1SQ5VPVWRXl4nHLK+mOhtoClSf5wq0MLrws55x54bIGaC/7eDAsegAWym9jVfo+iREhIbfgyu1dPIWK0BFA7IRcYn9ynUUReJvSDC3vdxk0yTa3gTpHI+bAuWXCFpzdRLOAEY60OMaTvv6aZ2ZnBTYVgfLYLxsDvlw7/MeTh6U1d6ZCwS94Tg2R9CS213lZU1kAC3xfvO5KWzdI3WrhT8Pt9Wl+P9SdYINJ34PR+KhKOdUtiB5AScHsLVcjSvgUDUo17s/QL+RNZ2lLLokCgYEA1J1jX4U3M0flvts2Ng+ioTeL0UgkhgLJyVCoQh6pWCjCzwSmCLeuIdMFX9co4aLtl1NLJfe3Vs5e8xLYNb854NZy0fQxShFn9wz4fsy5orV0hJt9WxTyWKzQ7EtXyvbSXpNsOyYHed0aiBLKedUy6wN84NOAWMAvW8yZFLNI928CgYEAtLMwY7Y7r+chbyVElLKPde/LcOIplUsfVhOgTWY0wz5WVWMQqEE3q9ZRD1UhrJNNOLqCwo0ZLYzdzDLRZ1xvXz9EYEuxQvrxOkcAxq2nVA0StPiPx0lb15ARXkzCKUUtCh5CUyiR2zH90Sskg3XOq66ej0Ht7MCMlGGDYfgp+G0CgYB5PsuVhEVnU//bJ+0xRRdL8n4kOYzCc0KZMArTseKGaLA3GAKLBBwkI89zySICEkSFQDWhkDMYKJWS7lMny0X5RrGxsxyMjYKJKvdmb98Iv4uTt4vz7e0JzntR1OFa2Ag9cLqOvHAU+ZaQtI6MjZz80j9bgqE1e1tGcVV2rYrVtwKBgQCrIHu2IpG6D2iRarjdHZFRPmvrFrQMx90AVovcYOuc738xVCUlQsYnPUr8+0Ftvv5FuBQ3jQqIIby3MnUvrtFmYXMuwuA3r5EeALoSbchmiA7sRe1b7PRGXBCmvoiuLu3thCSJvoULEffuzC3DNaEo47ETuHtLWDqKFyMmd6+/rQKBgQCoSib/4UQcYCtiutsBviYMjJudKJqQ8xE15UxDm1mVDV2bOhv5x+3ngEmHDDBOcALjSt51RIUbxghL3C/gjtd3jb9C/xxP++1zLKH+OTWSziJXA25mGZ3q+s2qVumjtWZRmaptHm0NgDbhZ9asmtXtp38kMhXSKK78n6QdujYdug==" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="热修复"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
