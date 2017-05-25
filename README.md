@@ -1,6 +1,6 @@
 # HotFixDemo
 官网文档给的例子太复杂，作为新手，我只想一个最干净最简单最直观的例子。看图说话：
-
+![image](https://github.com/tomyZhou/HotFixDemo/blob/master/fix/old.png)  ![image](https://github.com/tomyZhou/HotFixDemo/blob/master/fix/new.png)
 
 我使用的是hotfixt3.0版本：https://www.aliyun.com/product/hotfix
 
@@ -16,6 +16,8 @@
 
 
 三. 生产补丁包的工具，和测试用的apk文件都要下载hotfix3.0对应的版本，这个我已经都放fix目录下了。
+
+四. 签名放在了fix/fix.jks里面，keyPassword 和 key store password都是111111，Key alias是fix，另外亲测签名也照样可以成功补丁修复成功。
 
 
 另外，我在fix里面还放了我生产的例子，有old.apk 表示原始程序，new.apk 表示修改后的程序一，new2.apk表示修改后的程序二，sophix-patch.jar是 new2.apk 和 old.apk “搞”出来的补丁包。
