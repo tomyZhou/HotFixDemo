@@ -41,6 +41,6 @@
 			  如果成功的话效果就如上面两张图。
 
 
-备注：我在fix里面还放了我生产的例子，old.apk 表示原始程序，new.apk 表示修改后的程序一，new2.apk表示修改后的程序二，
+备注：我在fix里面还放了我生产的例子，old.apk 表示原始程序，new.apk 表示修改后的程序一，new2.apk表示修改后的
 
-      sophix-patch.jar是 new2.apk 和 old.apk “搞”出来的补丁包。
+	  程序二，sophix-patch.jar是 new2.apk 和 old.apk “搞”出来的补丁包。
